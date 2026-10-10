@@ -1,1 +1,13 @@
 Answer written questions here:
+
+1. Starting with a low iteration count makes the first frames render quickly, so the viewer stays
+responsive while the user moves or zooms. Higher iteration counts are used after the view stops
+changing to improve detail.
+
+2. Divide the image into groups of pixels and give each group to a different thread, core, or
+computer. The main computer can wait for the groups to finish and then combine them into the final
+image.
+
+3. Sampling four subpixels and averaging their colours would smooth jagged edges and reduce
+speckled noise. It would also take about four times as many Mandelbrot calculations per pixel, so
+rendering would be slower.

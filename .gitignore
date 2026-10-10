@@ -6,3 +6,5 @@
 .vscode/
 build/
 out/
+debug/
+release/
